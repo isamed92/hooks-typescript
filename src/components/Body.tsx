@@ -30,6 +30,12 @@ const Body: FC<BodyProps> = ({ name, age }) => {
     fetchData();
   }, []);
 
+  /* To-do:
+  1) obtener y mostrar el objeto que obtenemos desde el endpoint
+  2) darle tipo al objeto
+  3) mostrar los datos del objeto
+  */
+
   console.log('data::::::::::', data);
 
   return (
