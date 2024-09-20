@@ -18,7 +18,7 @@ const Body: FC<BodyProps> = ({ name, age }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'www.thecocktaildb.com/api/json/v1/1/random.php'
+          'https://www.thecocktaildb.com/api/json/v1/1/random.php'
         );
         const data = await response.json();
         setData(data);
@@ -36,15 +36,13 @@ const Body: FC<BodyProps> = ({ name, age }) => {
   3) mostrar los datos del objeto
   */
 
-  console.log('data::::::::::', data);
-
   return (
     <div>
       <h1>
         Hola mundo, soy {name}! tengo {age} años
       </h1>
       <input type='text' onChange={handleChange} />
-      {JSON.stringify(data)}
+      {JSON.stringify(data, null, 3)}
     </div>
   );
 };
