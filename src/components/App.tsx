@@ -1,4 +1,4 @@
-import { Body, Counter } from '.';
+import { DrinkBody } from '.';
 
 export const App = () => {
   return (
@@ -12,8 +12,7 @@ export const App = () => {
         width: '100vw',
       }}
     >
-      <Body name='Alex' age={35} />
-      <Counter />
+      <DrinkBody />
     </div>
   );
 };
